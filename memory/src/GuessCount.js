@@ -5,8 +5,8 @@ import './GuessCount.css'
 
 const GuessCount = ({ guesses }) => <div className="guesses">{guesses}</div>
 
-GuessCount.prototype = {
-  guesses: PropTypes.number.isRequired,
+GuessCount.propTypes = {
+  guesses: PropTypes.number.isRequired
 }
 
 export default GuessCount

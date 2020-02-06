@@ -33,6 +33,7 @@ class App extends Component {
     return (
       <div className="memory">
         <GuessCount guesses={0} />
+         {/* boucles pour recuperer les contenu */}
         {this.cards.map((card, index) => (
           <Card
             card={card}
