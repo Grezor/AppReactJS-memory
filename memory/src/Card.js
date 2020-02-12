@@ -18,10 +18,10 @@ Card.propTypes = {
     'visible',
     'hidden',
     'justMatched',
-    'justMismatched',
+    'justMismatched'
   ]).isRequired,
   index: PropTypes.number.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired
 }
 // const Greeter = ({ whom }) => (
 //   <button onClick={() => console.log(`Bonjour ${whom}!`)}>
