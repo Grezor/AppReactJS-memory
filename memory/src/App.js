@@ -67,19 +67,19 @@ class App extends Component {
       return
     }
 
-    // if (currentPair.length === 0) {
-    //   this.setState({ currentPair: [index] })
-    //   return
-    // }
+    if (currentPair.length === 0) {
+      this.setState({ currentPair: [index] })
+      return
+    }
     this.handleNewPairClosedBy(index)
   }
 
   handleNewPairClosedBy (index) {
     const { cards, currentPair, guesses, matchedCardIndices } = this.state
-
     const newPair = [currentPair[0], index]
     const newGuesses = guesses + 1
     const matched = cards[newPair[0]] === cards[newPair[1]]
+
     this.setState({ currentPair: newPair, guesses: newGuesses })
     if (matched) {
       this.setState({ matchedCardIndices: [...matchedCardIndices, ...newPair] })

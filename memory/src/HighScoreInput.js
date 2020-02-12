@@ -7,17 +7,15 @@ import { saveHOFEntry } from './HallOfFame'
 // import { saveHOFEntry } from './HallOfFame'
 
 class HighScoreInput extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { winner: '' }
-    this.persistWinner = this.persistWinner.bind(this)
-  }
+
+    state = { winner: '' }
 
   handleWinnerUpdate (event) {
-    this.state({ winner: event.target.value.toUpperCase() })
+    this.setState({ winner: event.target.value.toUpperCase() })
   }
 
-  persistWinner (event) {
+  persistWinner = event =>{
+    
     event.preventDefault()
     const newEntry = { guesses: this.props.guesses, player: this.state.winner }
     saveHOFEntry(newEntry, this.props.onStored)
