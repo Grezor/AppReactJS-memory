@@ -5,7 +5,7 @@
   margin: auto;
   user-select: none;
 }
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -42,4 +42,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.memory {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: auto;
+  user-select: none;
 }
