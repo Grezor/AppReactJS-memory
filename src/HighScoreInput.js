@@ -6,6 +6,7 @@ import './HighScoreInput.css'
 import { saveHOFEntry } from './HallOfFame'
 
 class HighScoreInput extends Component {
+  // etat de l'initialisateur
   state = { winner: '' }
 
   // Arrow fx for binding
