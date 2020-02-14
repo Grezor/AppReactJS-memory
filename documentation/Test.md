@@ -21,6 +21,15 @@ laisser les choses évoluer afin de ne pas
 exemple : AssertionError , qui vérifie qu'une condition est remplie.
 on utlise des bibliotheques prédéfinies
 
+```javascript
+function assertWeRunOnMondays() {
+  const todaysWeekDay = new Date().getDay()
+  if (todaysWeekDay !== 1) {
+    throw new AssertionError('We are supposed to only run on Mondays')
+  }
+}
+```
+
 ## tests et suites :
 
 - Test : petit bloc de code vérifiant un point précis, plus ou moins riche
@@ -37,6 +46,12 @@ on utlise des bibliotheques prédéfinies
 - On peut fixer des objectifs ou valeur planchers contraignants
   - Taux minitmum de te couverture (ex:90%)
   - refus d'intégration de code qui fait passer le taux sous le seuil. 
-  
+
+## Harnais : 
+
+un harnais de test est un progrmmae qui agit quelque sort comme le chef d'orchestre de nos tests.
+
+Il existe de nombreux harnais pour javascript, les plus populaire sont Moch, Jest et Jasmine
+
 
 

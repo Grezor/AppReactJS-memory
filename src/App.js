@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import shuffle from 'lodash.shuffle'
-
+import './App'
 import './App.css'
 
 import Card from './Card'

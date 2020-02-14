@@ -1,9 +1,13 @@
 module.exports = {
   env: {
+    extends: "eslint:recommended",
     browser: true,
-    es6: true
+    es6: true,
+    "node": true,
+    "mocha": true
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'standard'
   ],
@@ -19,8 +23,14 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    ["react"],
+    ["jest"]
   ],
   rules: {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   }
 }

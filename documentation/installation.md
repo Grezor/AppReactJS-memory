@@ -15,6 +15,8 @@ To create a production build, use npm run build.
 - **npm run lint**: voir les erreurs 
 - **npm start**: demarrer le projet
 
+- npm test : pour lancer jest
+
 
 ## extension : 
 - eslint 
