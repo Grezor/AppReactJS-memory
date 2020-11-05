@@ -10,11 +10,3 @@ You can now view memory in the browser.
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
-
-## Commandes : 
-- **npm run lint**: voir les erreurs 
-- **npm start**: demarrer le projet
-
-
-## extension : 
-- eslint 
